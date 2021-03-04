@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Statistic from './components/Statistic';
+import PizzaList from './components/PizzaList';
+import Orders from './components/Orders';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+	return (
+		<div className=" max-w-lg m-auto ">
+			<PizzaList />
+			<div className="flex justify-between">
+				<Orders />
+				<Statistic />
+			</div>
+		</div>
+	);
 }
-
-export default App;
