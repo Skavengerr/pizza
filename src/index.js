@@ -12,8 +12,8 @@ import App from './App';
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
 
 render(
-	<Provider store={store}>
-		<App />
-	</Provider>,
-	document.getElementById('root')
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
 );
